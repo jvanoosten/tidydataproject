@@ -7,14 +7,18 @@ Description of the variables
 1. subject              A numeric field.  
                         The Id associated with the study participant.  
                         There were 30 subjects.  Valid values are 1-30.
+                        
 2. activity             A descriptive label of the activities that the subjects performed. 
+                        
                         Valid values include:
-                        - walking 
-                        - walking up (for walking upstairs) 
-                        - walking down (for walking downstairs)
-                        - sitting
-                        - standing
-                        - laying
+                        
+                        * walking 
+                        * walking up (for walking upstairs) 
+                        * walking down (for walking downstairs)
+                        * sitting
+                        * standing
+                        * laying
+                        
 3. tBodyAccMeanMeanX        The average of time domain signals from the Galaxy S accelerometer for the body with the mean function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
                             

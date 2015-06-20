@@ -1,5 +1,5 @@
-run_analysis.R
-==============
+The run_analysis.R script 
+=========================
 
 Overview
 --------

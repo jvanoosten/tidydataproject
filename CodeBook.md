@@ -16,137 +16,201 @@ Description of the variables
                         - standing
                         - laying
 3. tBodyAccMeanMeanX        The average of time domain signals from the Galaxy S accelerometer for the body with the mean function applied along the X axis. 
-                            Values range from -1 to 1 with no unit of measure.                        
+                            Values range from -1 to 1 with no unit of measure.
+                            
 4. tBodyAccMeanMeanY        The average of time domain signals from the Galaxy S accelerometer for the body with the mean function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 5. tBodyAccMeanMeanZ        The average of time domain signals from the Galaxy S accelerometer for the body with the mean function applied along the Z axis.
                             Values range from -1 to 1 with no unit of measure.
+                            
 6. tBodyAccStdMeanX         The average of time domain signals from the Galaxy S accelerometer for the body with the standard deviation function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure. 
+                            
 7. tBodyAccStdMeanY         The average of time domain signals from the Galaxy S accelerometer for the body with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure. 
+                            
 8. tBodyAccStdMeanZ         The averages of time domain signals from the Galaxy S accelerometer for the body  with the standard deviation function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 9. tGravityAccMeanMeanX     The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the mean function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 10. tGravityAccMeanMeanY    The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the mean function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 11. tGravityAccMeanMeanZ    The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 12. tGravityAccStdMeanX     The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the standard deviation function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
 13. tGravityAccStdMeanY     The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 14. tGravityAccStdMeanZ     The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the standard deviation function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 15. tBodyAccJerkMeanMeanX   The average of time domain signals from the Galaxy S accelerometer for the body with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the X axis.
                             Values range from -1 to 1 with no unit of measure.
+                            
 16. tBodyAccJerkMeanMeanY   The average of time domain signals from the Galaxy S accelerometer for the body with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the Y axis. 
-                            Values range from -1 to 1 with no unit of measure. 
+                            Values range from -1 to 1 with no unit of measure.
+                            
 17. tBodyAccJerkMeanMeanZ  The average of time domain signals from the Galaxy S accelerometer for the body  with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 18. tBodyAccJerkStdMeanX    The average of time domain signals from the Galaxy S accelerometer for the body with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the X axis.  
                             Values range from -1 to 1 with no unit of measure.
+                            
 19. tBodyAccJerkStdMeanY    The average of time domain signals from the Galaxy S accelerometer for the body  with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 20. tBodyAccJerkStdMeanZ    The average of time domain signals from the Galaxy S accelerometer for the body  with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function appliedalong the Z axis. 
                             Values range from -1 to 1 with no unit of measure. 
+                            
 21. tBodyGyroMeanMeanX      The average of the time domain body signals from the Galaxy S gyroscope with the mean function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
 22. tBodyGyroMeanMeanY      The average of the time domain body signals from the Galaxy S gyroscope with the mean function applied along the Y axis. 
-                            Values range from -1 to 1 with no unit of measure. 
+                            Values range from -1 to 1 with no unit of measure.
+                            
 23. tBodyGyroMeanMeanZ      The average of the time domain body signals from the Galaxy S gyroscope with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 24. tBodyGyroStdMeanX       The average of the time domain body signals from the Galaxy S gyroscope with the standard deviation function applied along the X axis. 
-                            Values range from -1 to 1 with no unit of measure. 
+                            Values range from -1 to 1 with no unit of measure.
+                            
 25. tBodyGyroStdMeanY       The average of the time domain body signals from the Galaxy S gyroscope with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 26. tBodyGyroStdMeanZ       The average of the time domain body signals from the Galaxy S gyroscope with the standard deviation function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 27. tBodyGyroJerkMeanMeanX  The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 28. tBodyGyroJerkMeanMeanY  The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 29. tBodyGyroJerkMeanMeanZ  The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 30. tBodyGyroJerkStdMeanX   The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 31. tBodyGyroJerkStdMeanY   The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 32. tBodyGyroJerkStdMeanZ   The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the Z axis. 
-                            Values range from -1 to 1 with no unit of measure. 
+                            Values range from -1 to 1 with no unit of measure.
+                            
 33. tBodyAccMagMeanMean     The average of time domain signals from the Galaxy S accelerometer for the body with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 34. tBodyAccMagStdMean      The average of time domain signals from the Galaxy S accelerometer for the body with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied.
                             Values range from -1 to 1 with no unit of measure.
+                            
 35. tGravityAccMagMeanMean  The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 36. tGravityAccMagStdMean   The average of time domain gravity acceleration signals from the Galaxy S accelerometer with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied.    
                             Values range from -1 to 1 with no unit of measure.
+                            
 37. tBodyAccJerkMagMeanMean  The average of time domain signals from the Galaxy S accelerometer for the body with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 38. tBodyAccJerkMagStdMean  The average of time domain signals from the Galaxy S accelerometer for the body with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 39. tBodyGyroMagMeanMean    The average of the time domain body signals from the Galaxy S gyroscope with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 40. tBodyGyroMagStdMean     The average of the time domain body signals from the Galaxy S gyroscope with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 41. tBodyGyroJerkMagMeanMean The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 42. tBodyGyroJerkMagStdMean The average of the time domain body signals from the Galaxy S gyroscope with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 43. fBodyAccMeanMeanX       The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the mean function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 44. fBodyAccMeanMeanY       The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the mean function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure. 
+                            
 45. fBodyAccMeanMeanZ       The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 46. fBodyAccStdMeanX        The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the standard deviation function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 47. fBodyAccStdMeanY        The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure. along the Y axis.
+                            
 48. fBodyAccStdMeanZ        The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the standard deviation function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 49. fBodyAccJerkMeanMeanX   The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 50. fBodyAccJerkMeanMeanY The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 51. fBodyAccJerkMeanMeanZ   The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 52. fBodyAccJerkStdMeanX    The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 53. fBodyAccJerkStdMeanY    The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 54. fBodyAccJerkStdMeanZ    The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the standard deviation function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 55. fBodyGyroMeanMeanX      The average of frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the mean function applied along the X axis.     
                             Values range from -1 to 1 with no unit of measure.
+                            
 56. fBodyGyroMeanMeanY      The average of frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the mean function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 57. fBodyGyroMeanMeanZ      The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the mean function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 58. fBodyGyroStdMeanX       The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the standard deviation function applied along the X axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 59. fBodyGyroStdMeanY       The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the standard deviation function applied along the Y axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 60. fBodyGyroStdMeanZ       The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the standard deviation function applied along the Z axis. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 61. fBodyAccMagMeanMean     The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 62. fBodyAccMagStdMean      The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 63. fBodyAccJerkMagMeanMean The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 64. fBodyAccJerkMagStdMean  The average of frequency domain body signals from the Galaxy S accelerometer with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 65. fBodyGyroMagMeanMean    The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the magnitude of these signals calculated using the Euclidean norm with the mean function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 66. fBodyGyroMagStdMean     The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
 67. fBodyGyroJerkMagMeanMean    The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the mean function applied.
                             Values range from -1 to 1 with no unit of measure.
+                            
 68. fBodyGyroJerkMagStdMean The average frequency domain body signals from the Galaxy S gyroscope with a Fast Fourier Transform (FFT) applied with Jerk signals derived in time from the body linear acceleration and angular velocity with the magnitude of these signals calculated using the Euclidean norm with the standard deviation function applied. 
                             Values range from -1 to 1 with no unit of measure.
+                            
                             
 Description of the Data 
 -----------------------

@@ -80,21 +80,23 @@ The train data is loaded into three data tables.
 The train tables are combined using the column binding function starting with the 
 subject_train, then the activity_train, and then the features_train.
 
-The test and train data are then merged using row binding.  Duplicate columns are removed to clean the data and avoid processing errors later in the script.   The columns removed where not std() or mean() measurements.
+The test and train data are then merged using row binding.  Duplicate columns are removed to clean the data and avoid processing errors later in the script.   
     
 Extract the mean and standard deviation measurements 
 -----------------------------------------------------
 
-Extract columns for the subject, activity, and XYZ measurements with the 
-mean (*-mean()*) and standard deviation (*-std()*) functions applied.  
+I followed the advice in the discussion forum [Step 2: Extracting Mean and Std Deviation thread](https://class.coursera.org/getdata-015/forum/thread?thread_id=121) about which mean and standard deviation measurements to keep.  
 
-The freqMean measurements were excluded since they were obtained by averaging the signals 
-in a signal window sample. The TA's [thread](https://class.coursera.org/getdata-015/forum/thread?thread_id=26) includes the rational for that.  Adding the *freqMean variables 
+The extracted columns include columns for the subject, activity, and XYZ measurements with the 
+mean (*-mean()*) and standard deviation (*-std()*) functions applied. The meanFreq measurements were excluded 
+since they were obtained by averaging the signals in a signal window sample.   Adding the meanFreq variables 
 would be trivial if desired.   
 
-The columns names to extract where determined by using boolean operations and 
-the grepl function.   The extractdata data table is created by using subsetting on the 
-column names. 
+The columns names to extract where determined by using boolean operations and the grepl function.  
+The meanFreq columns were exclued by xor'ing there grepl result with the boolean vector of 
+mean columns.  
+
+The extractdata data table was created by subsetting using the boolean vector result. 
 
 Uses descriptive activity names
 -------------------------------
@@ -102,7 +104,18 @@ Uses descriptive activity names
 Descriptive activity names replaced the numeric value in the activity column.   
 
 The descriptive names mapping was 1 -> "walking", 2 -> "walking up", 3 ->"walking down", 
-4 -> "sitting", 5 -> "standing", and 6 -> "laying".
+4 -> "sitting", 5 -> "standing", and 6 -> "laying".   This is representative of the values 
+included in the activity_labels.txt raw data file. 
+
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+I explain in the CodeBood.md that "walking up" means "walking upstairs" and "walking down" means 
+"walking downstairs" 
 
 
 Label the data set with descriptive variable names
@@ -112,6 +125,9 @@ The lables on the variables were replaced by more descriptive names.  The sub fu
 used to remove special characters in the column names and to change std measurements to 
 StdMean and mean measurements to MeanMean.  The Mean at the end is appropriate for the tidy
 data which includes the average (mean) of the Std and Mean measurements. 
+
+The measurements with BodyBody in the name where changed to have a single Body because the double 
+Body was a mistake according the TA David Hood's wonderful [thread](https://class.coursera.org/getdata-015/forum/thread?thread_id=26).   
 
     
 Create a second independent tidy data set
@@ -128,7 +144,7 @@ The data satisifies the principles of tidy data:
 2. Each different observation of that variable shoud be in a different row
 3. There should be one table for each "kind" of variable
 4. If you have multiple tables, they should include a column in the table
-that allows them to be linked. 
+that allows them to be linked.  We only have a single table in this case.
 
 The tidy data can be viewed using these statements:
 
@@ -143,6 +159,8 @@ Conclusion
 The project includes the four components of tidy data. 
 
 1. The raw data - via the link. 
-2. The tidy data set called tidydata.txt 
-3. A code book called CodeBook.md describing each variable and its values in the tidy data set.  See 
-4. The README.md that provides the recipe from going from 1 to 2,3.
+2. The tidy data set called tidydata.txt submitted on Coursera for Peer Assesment.
+3. A code book called CodeBook.md describing each variable and its values in the tidy data set.  This is included 
+in the github repo for this project.
+4. This README.md document that provides the details of the recipe from going from 1 to 2,3.   This is included 
+in the github repo for this project and with the run_analysis.R script.

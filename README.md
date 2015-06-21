@@ -14,6 +14,19 @@ The run_analysis.R script satifies the requirements of the Getting and Cleaning 
 
 The sections below provide the details for each step.
 
+To run the script in the R programming environment do the following:
+
+>source("run_analysis.R")
+>run_analysis()
+
+The program produces a "tidydata.txt" file that has the tidy data.  The data can be 
+read into a data table and viewed using the these commands.
+
+>data <- read.table("tidydata.txt", header = TRUE)
+>View(data)
+
+The resulting dimensions of the tidy data are 180 rows (6 activities per subject) and 68 columns.
+
 The Raw Data
 ------------
 
@@ -50,6 +63,9 @@ The dataset includes the following files:
 
 The raw data also included Inertial Signals data for both train and test but this data was 
 not required in the final result therefore was not processed by the run_analysis.R script.
+
+The instructions state the program should run if the raw data is in the working directory.  The 
+script verifies the assumption that the data is there and downloads if it is not.  
 
 
 Merging the training and test data

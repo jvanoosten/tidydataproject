@@ -2,13 +2,19 @@ run_analysis <- function() {
     # use the dplyr package for arranging, grouping, and summarising the data 
     require("dplyr")
     library(dplyr)   
+
+    # set context to the directory that has the downloaded raw data 
+    # setwd("/Users/jimvo/src/datascience/cleaningdata/project")
     
-    # download the raw data - instructions state the program should run if the 
-    # raw data is in the working directory - so commenting out the download.
-    # dataUrl = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-    # download.file(dataUrl, destfile = "getdata_projectfiles_UCI HAR Dataset.zip", method = "curl")
-    # unzip the raw data
-    # unzip("getdata_projectfiles_UCI HAR Dataset.zip")
+    # Instructions state the program should run if the raw data is in the working directory
+    # Verify the assumption that the data is there 
+    if (!file.exists("UCI HAR Dataset")) {
+        # download the raw data 
+        dataUrl = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+        download.file(dataUrl, destfile = "getdata_projectfiles_UCI HAR Dataset.zip", method = "curl")
+        # unzip the raw data
+        unzip("getdata_projectfiles_UCI HAR Dataset.zip")
+    }
     
     # load the features in a table so they can be used as column names 
     features <- read.table("UCI HAR Dataset/features.txt")
@@ -90,10 +96,10 @@ run_analysis <- function() {
     # the average of each variable for each activity and each subject.
     tidydata <- extractdata %>% arrange(subject) %>% group_by(subject, activity) %>% summarise_each(funs(mean))
     # Save the tidydata table to a file
-    write.table(tidydata, "tidydata.txt", row.name=FALSE)  
+    write.table(tidydata, "tidydata.txt", row.name=FALSE)
     
-    # The tidy data can be viewed using these statements
-    # data <- read.table("tidydata.txt", header = TRUE)
-    # View(data)
+    message("The tidydata.txt file has been created and can be viewed using these statements:")
+    message("data <- read.table(\"tidydata.txt\", header = TRUE)")
+    message("View(data)")
 }
     

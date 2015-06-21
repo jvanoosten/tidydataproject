@@ -256,10 +256,11 @@ Transformations Performed to Clean Up the Data
 
 The transformations included:
 
-1. Merging the training and the test sets to create one data set.  That included adding the columns for the subjects and activities.
-2. Only the measurements on the mean and standard deviation for each measurement were extracted. 
-3. Descriptive activity names where applied to the activities in the data set.
-4. Labels for the measurements were updated to removed invalid characters, remove mistakes (BodyBody), 
-and show these were averages of averages and standard deviations.
+1. Merging the training and the test sets to create one data set.  That included adding the columns for the subjects and activities.  This [diagram](https://class.coursera.org/getdata-015/forum/thread?thread_id=112#comment-276) created by TA David Hood shows how the raw files fit together for
+row and column binding.  The raw Inertial Signals data for both train and test were not required in the final result so they were not merged.
+2. Only the measurements on the mean ("-mean()") and standard deviation ("-std()") for each measurement were extracted.  Columns with duplicate names were removed.
+3. Descriptive activity names where applied to the activities in the data set as shown above in variable 2.
+4. Labels for the measurements were updated to remove invalid characters, remove mistakes (BodyBody), 
+and indicate these were averages of averages (MeanMean) and standard deviations (StdMean).
 
-Explicit details of the transformations are included in the README.md
+Details on how the transformations were performed are included in the README.md

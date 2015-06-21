@@ -16,16 +16,16 @@ The sections below provide the details for each step.
 
 To run the script in the R programming environment do the following:
 
->source("run_analysis.R")
->run_analysis()
+* source("run_analysis.R")
+* run_analysis()
 
 The program produces a "tidydata.txt" file that has the tidy data.  The data can be 
 read into a data table and viewed using the these commands.
 
->data <- read.table("tidydata.txt", header = TRUE)
->View(data)
+* data <- read.table("tidydata.txt", header = TRUE)
+* View(data)
 
-The resulting dimensions of the tidy data are 180 rows (6 activities per subject) and 68 columns.
+The resulting dimensions of the tidy data are 180 rows (6 activities performed by 30 subjects) and 68 columns.  See the CodeBook.md for a description of each of the 68 variables. 
 
 The Raw Data
 ------------
@@ -65,15 +65,16 @@ The raw data also included Inertial Signals data for both train and test but thi
 not required in the final result therefore was not processed by the run_analysis.R script.
 
 The instructions state the program should run if the raw data is in the working directory.  The 
-script verifies the assumption that the data is there and downloads if it is not.  
+script checks that assumption and downloads the data if it is not there.
 
 
 Merging the training and test data
 ----------------------------------
 
 How the data files fit together was determined by experimenting with reading the 
-files into data tables and examing there dimensions.  Later in the project, 
-TA David Hood drew and nice [diagram](https://class.coursera.org/getdata-015/forum/thread?thread_id=112#comment-276) that shows how the test and training data fit together.
+files into data tables and examing the dimensions.  Later in the project, 
+TA David Hood drew and nice [diagram](https://class.coursera.org/getdata-015/forum/thread?thread_id=112#comment-276) that shows how the test and training data fit together for 
+row and column binding.
 
 The script loads the features.txt in a data table so the names can be used as the 
 initial column names.  
@@ -89,7 +90,7 @@ subject_test, then the activity_test, and then the features_test.
 
 The train data is loaded into three data tables.
 
-- Load the subject_traing data table by reading subjext_train.txt. Set "subject" as the column name.
+- Load the subject_train data table by reading subjext_train.txt. Set "subject" as the column name.
 - Load the activity_train data table by reading y_train.txt. Set "activity" as the column names.
 - Load the features_train data table that has all the feature variables with feature column names.
 
